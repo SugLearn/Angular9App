@@ -1,0 +1,9 @@
+<h2 >Student List</h2>
+<ul class="items">
+    <li (click)="onSelect(list)"  *ngFor="let list of department">
+        <span class="badge">{{list.name}}</span>
+    </li>
+</ul>
+<ul appColor *ngFor="let stud of students">
+    <li>{{stud.name | uppercase }}</li>
+</ul>
