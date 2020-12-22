@@ -44,6 +44,11 @@ export class DepartmentDetailsComponent implements OnInit {
 
   }
 
+  //child routing
+  showForm(){
+    this.router.navigate(['reactive-form'], { relativeTo: this.route });
+  }
+
 
 
 }

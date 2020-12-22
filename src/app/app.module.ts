@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SampleComponent } from './sample/sample.component';
@@ -11,6 +11,7 @@ import { StudentDetailsComponent } from './studentComponent/student-details/stud
 import { HttpClientModule } from '@angular/common/http';
 import { ColorDirective } from './custom-directive/color.directive';
 import { DepartmentDetailsComponent } from './studentComponent/department-details/department-details.component';
+import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 
 
 
@@ -24,6 +25,7 @@ import { DepartmentDetailsComponent } from './studentComponent/department-detail
     StudentDetailsComponent,
     ColorDirective,
     DepartmentDetailsComponent,
+    ReactiveFormComponent,
 
 
 
@@ -32,6 +34,7 @@ import { DepartmentDetailsComponent } from './studentComponent/department-detail
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpClientModule
   ],
   providers: [],

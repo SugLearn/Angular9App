@@ -1,10 +1,21 @@
 <h2>Selected Department id is {{departmentId}}</h2>
-<a (click)="goToPrevious()">
-    Previous
-</a>
-<a (click)="goToNext()">
-    Next
-</a>
 
-<button class="btn btn-primary" (click)= "goToBack()">Back</button>
+
+<p>
+<button (click)="goToPrevious()">
+    Previous
+</button>
+<button (click)="goToNext()">
+    Next
+</button>
+
+<button (click)= "goToBack()">Back</button>
+</p>
+<!---Child routing component-->
+<p>
+    <button (click)="showForm()">ReactiveForm</button>
+</p>
+<router-outlet></router-outlet>
+
+<!---End Child routing component-->
 
